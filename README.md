@@ -42,6 +42,10 @@ cd blinky
 make
 ```
 
+### flash code into the board:
+
+openocd -s "/usr/local/share/openocd/scripts" -f "interface/stlink-v2.cfg" -f "target/stm32f4x.cfg" -c "main main.elf verify reset exit"
+
 #### debugging existing project
 
 Run Openocd as GDB server 
