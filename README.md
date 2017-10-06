@@ -50,7 +50,7 @@ openocd -s "/usr/local/share/openocd/scripts" -f "interface/stlink-v2.cfg" -f "t
 
 Run Openocd as GDB server 
 ```
-openocd -c ""gdb_port 4444" -s "/usr/local/share/openocd/scripts" -f "interface/stlink-v2.cfg" -f "target/stm32f4x.cfg"
+openocd -c "gdb_port 4444" -s "/usr/local/share/openocd/scripts" -f "interface/stlink-v2.cfg" -f "target/stm32f4x.cfg"
 
 ```
 Open another terminal and run
